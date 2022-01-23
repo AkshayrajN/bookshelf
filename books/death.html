@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="">
+        <title>Death:An inside story</title>
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+        }
+        .nav.bar{
+            justify-content: center;
+        }
+        .logo {
+            display: flex;
+            
+            justify-content: center;
+        }
+        .logo img{
+            display: flex;
+            position: relative;
+            width: 400px;
+            height: 160px;
+            justify-content: center;
+            border: 1px solid wheat;
+            border-radius: 25px;
+        }
+        .marquee marquee{
+            font-size: medium;
+            text-decoration: none;
+            font-style: italic;
+            font-size: 25px;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            margin-top: 1%;
+
+        }   
+        .column{
+            text-align:right;
+            float: left;
+            
+        }
+        .column img{
+            width: 240px;
+            overflow: hidden;
+            margin-left: 60%;
+            margin-top: 7%;
+            border: 2px solid black;
+            
+        }
+        .column h1{
+            font-size: 50px;
+            font-family:'Times New Roman', Times, serif;
+            color: blue;
+            padding: 0%;
+            width: 153%;
+        }
+        .column h2{
+            font-size: x-large;
+            color: rgba(26, 25, 24, 0.959);
+            padding: 0%;
+            width: 144%;
+        }
+        .column span{
+            color: blue
+        }
+        #ee{
+            color: rgb(8, 12, 12);
+            
+            font-size: 25px;
+            position: relative;
+            left: 12%;
+        }
+        #aa{
+            color: black;
+            font-size: 20px;
+            position: relative;
+            left:15%;
+        }
+        .button-3 {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgb(27 31 35 / 10%) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+    </style>
+    <body>
+        <nav class="bar">
+            <a href="/home.html"><div class="logo"><img src="/images/Bookshelf.png" alt="logo"></a>
+            </div>
+        </nav>
+        <div class="marquee">
+        <marquee behavior="scroll" color="black">"Books become permanent companions. Sometimes, they are born before us; they guide us during our life journey and continue for many generations."</marquee>
+        </div>
+        <div class="row">
+            <div class="column">
+             <img src="/images/death.jpg" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1><b>Death:An inside Story</b></h1>
+                <h2>Author: Jordan R Peterson</h2><br><br>
+                <span id="ee">Location: </span>
+                <span id="aa">
+                    <pre>Shelf-<mark>'C'</mark>
+                                   Row- <mark>'6'</mark>
+                                   Column-<mark>'4'</mark>
+                                      Book No-<mark>'20'</mark>
+               </pre>
+               <button class="button-3" role="button" onClick="refreshPage()">Issue</button>
+               <a href="/home.html"> <button class="button-3" role="button" >Home</button></a>
+
+
+    
+
+
+            </div>
+            
+        </div>
+        
+    </body>
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        </script>
+</html>
