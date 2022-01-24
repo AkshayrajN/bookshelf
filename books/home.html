@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="search.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <title>BookShelf</title>
+    </head>
+        <body>
+            <nav class="nav background" style="background-color: cornsilk;">
+                <ul class="nav-list">
+                    <div class="logo"><img src="/images/Bookshelf.png" alt="logo"></div>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#foot">Contact </a></li>
+                    <li><a href="#la">About</a></li> 
+                </ul>
+            </nav>
+            
+            <div class="ii">
+              
+                <div class="search">
+                  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search your book here.." title="Type in a category">
+                  <ul id="myMenu">
+                    <li><a href="/books/think.html">Think Like a Monk</a></li>
+                    <li><a href="/books/12rules.html">12 rules for life</a></li>
+                    <li><a href="/books/death.html">Death:An inside story</a></li>
+                    <li><a href="/books/learning.html">Learning How to Fly</a></li>
+                    <li><a href="/books/crushing.html">Crushing It</a></li>
+                    <li><a href="/books/elon.html">Elon Musk</a></li>
+                    <li><a href="/books/ikigai.html">Ikigai</a></li>
+                    <li><a href="/books/inner.html">Inner engineering</a></li>
+                    <li><a href="/books/rich.html">Rich Dad poor Dad</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+           <div class="bottom">
+            <footer><div id="foot"><h1>GET ME ON</h1>
+           <div class="icons">
+            
+              
+              <div>
+                <ul class="social-network social-circle">
+                  <li><a href="https://www.instagram.com/_akshayn_20/" class="icoRss" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://m.facebook.com/sas.200" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/AkshayRajN_20" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://github.com/AkshayRajNK" class="icoGoogle" title="Github"><i class="fa fa-github"></i></a></li>
+                  
+                </ul>
+              </div>
+            
+            
+          </div></footer>
+            </div>
+
+           </div>
+              <div class="last">
+                <h1><center>About Me</center></h1>
+                <center><h3>Hi, I'm a Student</h3></center>
+              </div>
+                
+          
+        </body>    
+</html>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+       
+      }
+    }
+  }
+  </script>
